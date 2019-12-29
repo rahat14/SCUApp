@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Log In Page!!"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:textSize="@dimen/_19sdp"
+        android:gravity="center"/>
+
+
+    <EditText
+        android:id="@+id/usernameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter The Email"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_10sdp"/>
+    <EditText
+        android:id="@+id/passEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter The Password"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"/>
+
+
+    <Button
+
+        android:id="@+id/proceedBtn"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textAlignment="center"
+        />
+
+
+
+
+    <Button
+
+        android:id="@+id/regBtn"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:text="Registration"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textAlignment="center"
+        />
+
+
+
+</LinearLayout>

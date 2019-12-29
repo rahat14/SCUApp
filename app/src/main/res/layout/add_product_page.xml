@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text=" Item Name : "/>
+
+
+        <EditText
+            android:id="@+id/titleEt"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/edit_text_outline"
+            android:hint="Enter The Name..."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_13sdp"
+        android:text=" Pick An Image Of The Item : "/>
+    <ImageView
+        android:id="@+id/pimage"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/product_1"
+        android:layout_height="@dimen/_120sdp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text=" Item Description : "/>
+    <EditText
+        android:id="@+id/detailsEt"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_height="@dimen/_85sdp"
+        android:maxLines="5"
+        android:padding="@dimen/_3sdp"
+        android:background="@drawable/edit_text_outline"
+        android:hint="Enter Details Of Booking..."/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_13sdp"
+
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text=" Item Quantity : "/>
+
+
+        <EditText
+            android:id="@+id/quatityEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_40sdp"
+            android:background="@drawable/edit_text_outline"
+            android:gravity="center"
+            android:inputType="numberSigned"
+            android:hint="Enter The Quantity..."
+           />
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_13sdp"
+
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text=" Item Category : "/>
+
+
+    <EditText
+        android:id="@+id/categoryEt"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_height="wrap_content"
+        android:maxLines="5"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        android:background="@drawable/edit_text_outline"
+        android:hint="Enter The Category..."/>
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:text="Add Item "
+        android:textColor="@color/white"
+        android:background="#665EFF"
+        android:textAllCaps="false"
+       android:textSize="@dimen/_13sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        />
+    </LinearLayout>
+</ScrollView>

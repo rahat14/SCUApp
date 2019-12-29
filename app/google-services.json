@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "357447122216",
+    "firebase_url": "https://scu-app-3bec7.firebaseio.com",
+    "project_id": "scu-app-3bec7",
+    "storage_bucket": "scu-app-3bec7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357447122216:android:da0dca00794dcaf924e41d",
+        "android_client_info": {
+          "package_name": "com.SyntexError.scuapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357447122216-bjhisk3fmklmlf272g5vi07eken5e5uk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.SyntexError.scuapp",
+            "certificate_hash": "e7134e9e771c4552820851631487affe4d0ba29b"
+          }
+        },
+        {
+          "client_id": "357447122216-u1vhs17gk5ni07bd3lr2ft7jascb0v70.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwiTX2yM0Wv5jhpy0IVchx9iEBjVUHB0M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357447122216-u1vhs17gk5ni07bd3lr2ft7jascb0v70.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".studentsPackage.studentDashBoard">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/TablaoutId"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        android:background="#99000000"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/colorAccent"
+        app:tabMode="scrollable"
+        app:tabTextColor="@color/white" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>
