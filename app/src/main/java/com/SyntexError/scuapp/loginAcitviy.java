@@ -34,6 +34,9 @@ public class loginAcitviy extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         //init buton
 
+
+        getSupportActionBar().hide();
+
         final Button preceedBtn = findViewById(R.id.proceedBtn);
         final Button regBtn = findViewById(R.id.regBtn) ;
         user = findViewById(R.id.usernameEt);
