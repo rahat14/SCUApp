@@ -8,6 +8,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_30sdp"
         android:layout_height="match_parent">
 
 
@@ -18,26 +21,34 @@
             android:text="Equipment Name : "
             android:textStyle="bold"
             android:id="@+id/title"
+            android:textColor="@color/colorRegContButton"
             android:textSize="@dimen/_15sdp"
             />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
             android:layout_height="wrap_content">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textSize="@dimen/_13sdp"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/colorRegContButton"
                 android:text="Quantity:"/>
 
             <EditText
                 android:id="@+id/quatityEt"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/_150sdp"
                 android:layout_height="wrap_content"
                 android:hint="How Many You Want"
+                android:paddingLeft="@dimen/_10sdp"
                 android:inputType="numberSigned"
+                android:textColorHint="#A7A5F7"
+                android:textColor="#000000"
+                android:backgroundTint="@color/colorRegContButton"
+                android:layout_marginLeft="@dimen/_10sdp"
                 android:textSize="@dimen/_13sdp"/>
 
 
@@ -49,7 +60,9 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sdp"
             android:textStyle="bold"
-            android:text="Pick Up Time :"/>
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Pick Up Time :"
+            android:textColor="@color/colorRegContButton"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -58,39 +71,40 @@
             android:layout_marginStart="@dimen/_5sdp"
             android:weightSum="2">
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="2dp"
-                android:layout_weight="1"
-                android:orientation="vertical"/>
+
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="2dp"
+                android:layout_marginLeft="15dp"
                 android:layout_weight="1"
+                android:layout_marginTop="@dimen/_5sdp"
                 android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="Date : " />
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:text="Date : "
+                    android:textStyle="bold"
+                    android:textColor="@color/colorRegContButton"
+                    android:textSize="@dimen/_10sdp"/>
 
                 <TextView
                     android:id="@+id/dateEdit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/_34sdp"
                     android:background="@drawable/edit_text_outline"
-                    android:drawableStart="@drawable/date_icon"
-                    android:drawablePadding="10dp"
-                    android:gravity="start"
+                    android:drawableStart="@drawable/ic_datef"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
                     android:textSize="15sp"
-                    android:textColor="#000"
+                    android:textColorHint="#A7A5F7"
+                    android:textColor="#000000"
                     android:textStyle="bold"
                     android:hint="dd/mm/yyyy"
-                    android:padding="10dp" />
+                    android:padding="@dimen/_10sdp" />
 
 
             </LinearLayout>
@@ -100,6 +114,8 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sdp"
             android:textStyle="bold"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/colorRegContButton"
             android:text="Return Time :"/>
         <LinearLayout
             android:layout_marginEnd="@dimen/_5sdp"
@@ -107,35 +123,40 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-
             android:weightSum="2">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="2dp"
                 android:layout_weight="1"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
                 android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorRegContButton"
+                    android:textSize="@dimen/_10sdp"
                     android:text="Date : " />
 
                 <TextView
                     android:id="@+id/dropdateEdit"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="@dimen/_34sdp"
                     android:background="@drawable/edit_text_outline"
-                    android:drawableStart="@drawable/date_icon"
-                    android:drawablePadding="10dp"
-                    android:gravity="center|start"
+                    android:drawableStart="@drawable/ic_datef"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
                     android:textSize="15sp"
-                    android:textColor="#000"
+                    android:textColorHint="#A7A5F7"
+                    android:textColor="#000000"
                     android:textStyle="bold"
                     android:hint="dd/mm/yyyy"
-                    android:padding="10dp" />
+                    android:padding="@dimen/_10sdp" />
 
 
             </LinearLayout>
@@ -146,20 +167,30 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/_14sdp"
             android:textStyle="bold"
-            android:layout_marginTop="@dimen/_5sdp"
-            android:text=" Details :"/>
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text=" Details :"
+            android:textColor="@color/colorRegContButton"
+            />
         <EditText
             android:id="@+id/detailsEt"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_90sdp"
             android:layout_marginStart="@dimen/_15sdp"
-            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_5sdp"
             android:layout_marginEnd="@dimen/_15sdp"
+            android:gravity="top|center|left"
+            android:textColorHint="#A7A5F7"
+            android:textColor="#000000"
+            android:backgroundTint="#ffffff"
             android:hint="Enter Deatils Of Booking..." />
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
             >
             <Button
                 android:id="@+id/accptBtn"
@@ -168,23 +199,29 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="false"
                 android:text="Accept Booking"
-
                 android:textAllCaps="false"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_marginStart="@dimen/_25sdp"
-                android:layout_height="@dimen/_50sdp"/>
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                android:layout_weight=".3"
+                android:background="@drawable/green"
+                android:layout_height="@dimen/_45sdp"/>
+            <Space
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="match_parent"/>
             <Button
                 android:id="@+id/decBtn"
+                android:layout_weight=".3"
+                android:background="@drawable/red"
                 android:layout_width="@dimen/_120sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:text="Decline Booking"
                 android:textAllCaps="false"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_marginEnd="@dimen/_35sdp"
-                android:layout_height="@dimen/_50sdp"/>
+                android:layout_height="@dimen/_45sdp"/>
 
 
-        </RelativeLayout>
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>
