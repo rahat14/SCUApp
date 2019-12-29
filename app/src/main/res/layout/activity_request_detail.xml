@@ -64,12 +64,11 @@
             android:text="Pick Up Time :"
             android:textColor="@color/colorRegContButton"/>
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="@dimen/_200sdp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginEnd="@dimen/_5sdp"
-            android:layout_marginStart="@dimen/_5sdp"
-            android:weightSum="2">
+            android:layout_marginStart="@dimen/_5sdp">
 
 
 
@@ -98,13 +97,12 @@
                     android:drawableStart="@drawable/ic_datef"
                     android:drawablePadding="@dimen/_10sdp"
                     android:layout_gravity="center"
-                    android:gravity="center|left"
+                    android:gravity="center"
                     android:textSize="15sp"
-                    android:textColorHint="#A7A5F7"
                     android:textColor="#000000"
                     android:textStyle="bold"
-                    android:hint="dd/mm/yyyy"
-                    android:padding="@dimen/_10sdp" />
+                    android:text="dd/mm/ydfghd"
+                    android:padding="@dimen/_2sdp" />
 
 
             </LinearLayout>
@@ -122,13 +120,11 @@
             android:layout_marginStart="@dimen/_5sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="2">
+            android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="@dimen/_200sdp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginTop="@dimen/_5sdp"
                 android:layout_marginLeft="@dimen/_15sdp"
                 android:orientation="vertical">
@@ -150,13 +146,13 @@
                     android:drawableStart="@drawable/ic_datef"
                     android:drawablePadding="@dimen/_10sdp"
                     android:layout_gravity="center"
-                    android:gravity="center|left"
+                    android:gravity="center"
                     android:textSize="15sp"
                     android:textColorHint="#A7A5F7"
                     android:textColor="#000000"
                     android:textStyle="bold"
-                    android:hint="dd/mm/yyyy"
-                    android:padding="@dimen/_10sdp" />
+                    android:text="dd/mm/yyyy"
+                    android:padding="@dimen/_2sdp" />
 
 
             </LinearLayout>
