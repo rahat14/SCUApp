@@ -2,7 +2,6 @@ package com.SyntexError.scuapp.adminPackage;
 
 import android.Manifest;
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;

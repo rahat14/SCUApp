@@ -10,8 +10,8 @@
         android:orientation="vertical"
         android:layout_marginLeft="@dimen/_12sdp"
         android:layout_marginRight="@dimen/_12sdp"
-        android:layout_marginTop="@dimen/_30sdp"
-        android:layout_height="match_parent">
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="wrap_content">
 
 
 
@@ -21,6 +21,27 @@
             android:text="Equipment Name : "
             android:textStyle="bold"
             android:id="@+id/title"
+            android:textColor="@color/colorRegContButton"
+            android:textSize="@dimen/_15sdp"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Name : "
+            android:textStyle="bold"
+            android:id="@+id/studentName"
+            android:textColor="@color/colorRegContButton"
+            android:textSize="@dimen/_15sdp"
+            />
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Name : "
+            android:textStyle="bold"
+            android:id="@+id/studentNum"
             android:textColor="@color/colorRegContButton"
             android:textSize="@dimen/_15sdp"
             />
@@ -170,7 +191,7 @@
         <EditText
             android:id="@+id/detailsEt"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_90sdp"
+            android:layout_height="@dimen/_70sdp"
             android:layout_marginStart="@dimen/_15sdp"
             android:layout_marginTop="@dimen/_5sdp"
             android:layout_marginEnd="@dimen/_15sdp"
@@ -186,7 +207,7 @@
             android:weightSum="1"
             android:layout_gravity="center"
             android:gravity="center"
-            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             >
             <Button
                 android:id="@+id/accptBtn"

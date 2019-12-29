@@ -105,6 +105,8 @@ public class pendingRequestFragment extends Fragment {
                         intent.putExtra("pickDate" , getItem(position).getFromDate()) ;
                         intent.putExtra("toDate", getItem(position).getToDate()) ;
                         intent.putExtra("reqid",getItem(position).getReqID() ) ;
+                        intent.putExtra("userID" , getItem(position).getUserID()) ;
+
 
                         startActivity( intent);
 

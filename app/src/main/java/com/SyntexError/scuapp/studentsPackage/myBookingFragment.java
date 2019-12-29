@@ -1,6 +1,7 @@
 package com.SyntexError.scuapp.studentsPackage;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,6 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.SyntexError.scuapp.R;
+import com.SyntexError.scuapp.adminPackage.runningReqDetails;
 import com.SyntexError.scuapp.models.modelsForReq;
 import com.SyntexError.scuapp.viewHolderForReq;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -22,6 +24,8 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
+
+import es.dmoral.toasty.Toasty;
 
 import static android.content.Context.MODE_PRIVATE;
 
@@ -95,6 +99,26 @@ public class myBookingFragment extends Fragment {
                 viewholderForItemList.setOnClickListener(new viewHolderForReq.ClickListener() {
                     @Override
                     public void onItemClick(View view, int position) {
+
+                        if(getItem(viewholderForItemList.getAdapterPosition()).getStatus().equals("Running"))
+                        {
+
+                            Intent intent = new Intent(getContext()  , returnActivity.class);
+                            intent.putExtra("name", getItem(position).getEquipName()) ;
+                            intent.putExtra("quatity" , getItem(position).getQuantity()) ;
+                            intent.putExtra("details", getItem(position).getComment()) ;
+                            intent.putExtra("pickDate" , getItem(position).getFromDate()) ;
+                            intent.putExtra("toDate", getItem(position).getToDate()) ;
+                            intent.putExtra("reqid",getItem(position).getReqID() ) ;
+                            intent.putExtra("mail" , getItem(position).getUserName())  ;
+
+                            startActivity( intent);
+                        }
+                        else {
+
+                            Toasty.error(getContext() , "This is not a Running Booking " , Toasty.LENGTH_SHORT, false)
+                            .show();
+                        }
 
 
 

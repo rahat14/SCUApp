@@ -15,11 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".adminPackage.runningReqDetails"></activity>
+        <activity android:name=".studentsPackage.returnActivity"></activity>
+        <activity android:name=".adminPackage.runningReqDetails" />
         <activity android:name=".adminPackage.RequestDetailActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".loginAcitviy" >
-
+        <activity android:name=".loginAcitviy">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,9 +33,7 @@
             android:theme="@style/Base.Theme.AppCompat" />
         <activity android:name=".adminPackage.addProductActivity" />
         <activity android:name=".studentsPackage.studentDashBoard" />
-        <activity android:name=".adminPackage.adminDashBoard">
-
-        </activity>
+        <activity android:name=".adminPackage.adminDashBoard"></activity>
     </application>
 
 </manifest>

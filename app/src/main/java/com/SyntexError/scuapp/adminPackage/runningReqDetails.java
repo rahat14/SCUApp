@@ -15,17 +15,21 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.SyntexError.scuapp.R;
+import com.SyntexError.scuapp.models.modelForStudents;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class runningReqDetails extends AppCompatActivity {
     String nameOfEquipment   , pickTime    , retunDate , getReqID  , details ,
-            quantityNeed , userMail ;
+            quantityNeed , userMail , userID ;
     EditText quantityNeedEt  ,detailsEt  ;
-    TextView pickTimeTv , pickDateTv , returnDateTv , returntimeTv ;
-    Button recieveBtn  , sendMsgBtn  ;
+    TextView pickTimeTv , pickDateTv , returnDateTv , returntimeTv , studentName , StudentNum ;
+    Button recieveBtn  , sendMsgBtn   ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +44,7 @@ public class runningReqDetails extends AppCompatActivity {
         details =  o.getStringExtra("details") ;
         getReqID =  o.getStringExtra("reqid") ;
         userMail = o.getStringExtra("mail") ;
+        userID  = o.getStringExtra("userID")  ;
 
         quantityNeed =  o.getStringExtra("quatity") ;
 
@@ -113,6 +118,38 @@ public class runningReqDetails extends AppCompatActivity {
 
             }
         });
+
+    }
+    @Override
+    protected void onStart() {
+        super.onStart();
+        studentName  =findViewById(R.id.studentName) ;
+        StudentNum = findViewById(R.id.studentNum) ;
+
+
+
+        DatabaseReference mref = FirebaseDatabase.getInstance().getReference("users").child(userID);
+
+        mref.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                modelForStudents model = dataSnapshot.getValue(modelForStudents.class) ;
+
+                studentName.setText("Booker Name : "+model.getName());
+                StudentNum.setText("Booker Phone : "+model.getPh());
+
+
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+
+
 
     }
 }

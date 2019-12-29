@@ -1,6 +1,7 @@
 package com.SyntexError.scuapp.studentsPackage;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.SyntexError.scuapp.R;
+import com.SyntexError.scuapp.adminPackage.runningReqDetails;
 import com.SyntexError.scuapp.adminPackage.viewholderForItemList;
 import com.SyntexError.scuapp.models.modelForProduct;
 import com.SyntexError.scuapp.models.modelsForReq;
@@ -94,6 +96,8 @@ public class pendingBookingFragment  extends Fragment {
                 viewholderForItemList.setOnClickListener(new viewHolderForReq.ClickListener() {
                     @Override
                     public void onItemClick(View view, int position) {
+
+
 
 
 
